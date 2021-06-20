@@ -8,6 +8,14 @@ The most important basic features have been implemented, but __UI is non-existen
 You can create a room where others can join via a link. Users can place a vote,
 and once everyone has voted, the admin can reveal the votes. An average value is calculated from the votes.
 
+# Setup
+Set up Trunk according to [Yew Trunk Template
+](https://github.com/yewstack/yew-trunk-minimal-template).
+```bash
+rustup target add wasm32-unknown-unknown
+cargo install trunk wasm-bindgen-cli
+```
+
 # Usage
 
 ```bash
