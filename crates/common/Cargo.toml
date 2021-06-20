@@ -1,0 +1,17 @@
+[package]
+name = "planpoker-common"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+serde = "1.0"
+serde_derive = "1.0"
+uuid = "0.8"
+
+serde_json = {version = "*", optional = true}
+bincode = {version = "*", optional = true}
+
+[features]
+default = []
+json = ["serde_json"]
+binary = ["bincode"]

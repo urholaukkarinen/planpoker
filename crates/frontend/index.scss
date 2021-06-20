@@ -1,0 +1,34 @@
+$card-width: 3em;
+$card-height: 4.5em;
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.card {
+    border: 1px solid;
+    border-color: rgb(126, 126, 126);
+    border-radius: 0.25em;
+    color: rgb(58, 58, 58);
+    width: $card-width;
+    height: $card-height;
+    line-height: $card-height;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: white;
+    background-image: linear-gradient(rgb(243, 243, 243), rgb(235, 235, 235));
+    cursor: pointer;
+}
+
+.card:hover {
+    background-image: linear-gradient(rgb(233, 233, 233), rgb(224, 224, 224));
+}
+
+.card.selected {
+    border-color: hsl(120, 4%, 80%);
+}
